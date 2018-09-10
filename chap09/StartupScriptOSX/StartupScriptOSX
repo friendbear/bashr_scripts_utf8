@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# StartupScriptOSX - Mac OS Xの起動スクリプト
+
+PATH=$PATH:/usr/libexec
+
+case $1 in
+  start)
+    # 起動時に10秒待ち、目印となるファイルを作成する
+    ConsoleMessage "Running sample script for startup"
+    sleep 10
+    touch /startup-stamp
+    exit 0
+    ;;
+  stop)
+    # シャットダウン時に10秒待ち、目印ファイルを削除する
+    # （シャットダウンスクリプトは実際には実行されない）
+    ConsoleMessage "Running sample script for shutdown"
+    sleep 10
+    touch /shutdown-stamp
+    exit 0
+    ;;
+esac
+
+echo "usage: initscript_osx.sh {start|stop}"
+exit 1

@@ -1,0 +1,17 @@
+2006-02-20  NAKAHASHI Ichiro  <ichiro@nnip.org>
+
+	* chap02/pipe.sh: 誤字修正（demsg→dmesg）。
+
+2005-05-15  NAKAHASHI Ichiro  <ichiro@nnip.org>
+
+	* chap05/ftime_std.sh: 更新日が年をまたいで半年以内のファイルで間違っ
+	た更新年が表示されるバグを修正。
+
+2004-10-15  NAKAHASHI Ichiro  <ichiro@nnip.org>
+
+	* chap08/mail_send.sh: From:, Message-Id:ヘッダが重複するバグを修正。
+
+2004-09-30  NAKAHASHI Ichiro  <ichiro@nnip.org>
+
+	* 出版に合わせて公開。
+

@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# ShutdownScriptOSX - Mac OS Xでシャットダウン時にスクリプトを実行する
+
+PATH=$PATH:/usr/libexec
+
+case $1 in
+    start)
+	# shutdownscriptd.shをバックグラウンドで起動する
+	ConsoleMessage "Enabling shutdown script"
+	/Library/StartupItems/ShutdownScriptOSX/shutdownscriptd.sh &
+	exit 0
+	;;
+    *)
+	echo "unknown argument"
+	exit 1
+	;;
+esac
+
